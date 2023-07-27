@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var fact = " "
+    @State private var fact = "      "
+     
     let facts = [
-        "I absolutely love white roses & pink peonies.. ",
+        "I absolutely love white roses & pink peonies... ",
         "I used to do ballet & gymnastics 🩰 ",
         "My first language is Russian. I also know Belarussian & English. Currently struggling with French.. ",
         "I love reading French & Russian literature. Françoise Sagan is my favorite author. I love her romance books 🤍  ",
@@ -27,7 +28,7 @@ struct ContentView: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 197.0, height: 197.0)
-                .shadow(color: Color(red: 0.7373, green: 0.4353, blue: 0.6157, opacity: 0.5), radius: 24)
+                .shadow(color: Color(red: 0.7373, green: 0.4352, blue: 0.6158, opacity: 0.5), radius: 24)
             }
             Text("Natali Oleinik")
                 .font(.custom("Parisienne-Regular", size:45))
@@ -79,6 +80,7 @@ struct ContentView: View {
                         .shadow(color: Color(red: 1.0, green: 0.75, blue: 0.79, opacity: 0.5), radius: 10)
                 }
             }
+            //thats my ig
             Text("IG: @natalioleiniik")
                 .font(.callout)
                 .fontWeight(.semibold)
@@ -89,7 +91,7 @@ struct ContentView: View {
                 .font(.callout)
                 .fontWeight(.semibold)
                 .italic()
-                .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.321))
+                .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.5))
                 .padding([.leading, .trailing], 25)
                 .padding([.top], -7)
             Text(fact)
